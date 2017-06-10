@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Video Player</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https:///maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa fa-html5"></i></h1>
+        <h2>Custom Video Player</h2>
+    </div>
+    <div id="player" class="container">
+        <div id="videoContainer">
+            <div id="screen"><img class="grow" id="screenBtn" src="assets/img/play.png" alt="Play button"></div>
+            <video id="video">
+                <source src="assets/video/clip.mp4">
+                It seems your browser doesn't support the HTML 5 video tag. Please update it!
+            </video>
+        </div>
+        <div id="progressbarContainer">
+            <div id="pbar"></div>
+        </div>
+        <div id="buttonsContainer">
+            <img id="playBtn" class="grow" src="assets/img/play.png" alt="Play button">
+            <div id="timeField">
+                0:00 / 0:00
+            </div>
+            <img id="volumeBtn" class="grow" src="assets/img/sound.png" alt="volume">
+            <div id="sbarContainer" >
+                <div id="soundbar" class="grow"></div>
+            </div>
+            <img id="fullscreenBtn" class="grow" src="assets/img/fullscreen.png" alt="fullscreen">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
